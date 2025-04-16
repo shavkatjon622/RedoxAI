@@ -1,1 +1,1 @@
-web: gunicorn TeroxAI.wsgi
+web: gunicorn config.wsgi
