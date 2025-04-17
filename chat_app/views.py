@@ -41,26 +41,8 @@ class DiagnoseSkinAPIView(APIView):
             # else:
             #     return Response({"error": "Model API ishlamadi"}, status=500)
             result = {
-                        "id": "chatcmpl-1234567890",
-                        "object": "chat.completion",
-                        "created": 1699999999,
-                        "model": "gpt-3.5-turbo",
-                        "choices": [
-                                {
-                                    "index": 0,
-                                    "message": {
-                                        "role": "assistant",
-                                        "content": "Test qilamiz nima bolyapti ekan?"
-                                    },
-                                    "finish_reason": "stop"
-                                }
-                                ],
-                        "usage": {
-                                "prompt_tokens": 9,
-                                "completion_tokens": 13,
-                                "total_tokens": 22
-                            }
-                    }
+    "result": "Rasmda ko'rinib turgan muammo siğillar kabi ko'rinadi. Siğillar odatda inson papilloma virusi (HPV) tufayli paydo bo'ladi va terida o'sib chiqadi. Ular kosmetik noqulaylik keltirishi mumkin, lekin odatda zararli emas.\n\n**Muammoni bartaraf etish uchun tavsiyalar:**\n\n1. **Dori vositalari:**\n   - Siğillarni yo'qotish uchun dorixonalar o'zida salitsil kislotasi yoki boshqa keratolitik preparatlar taklif qiladi. Ularni qo'llashdan oldin isitma vannasi yordamida terini yumshatish foydali bo'lishi mumkin.\n\n2. **Kriyoterapiya:**\n   - Tibbiyot muassasalarida siğillarni muzlatib yo'qotish usuli mavjud. Bu jarayonni tajribali mutaxassis amalga oshiradi.\n\n3. **Lazer terapiyasi:**\n   - Lazer yordamida siğillarni yo'qotish usuli ham mavjud. Bu usul ko'pincha yanada samarali, lekin qimmatroq bo'lishi mumkin.\n\n4. **Elektrokoagulyatsiya:**\n   - Bu usulda elektr toki yordamida siğillarni yo'qotish amalga oshiriladi.\n\n5. **Doktorga murojaat qilish:**\n   - Agar siğillar kattalashsa, og'riq sezilsa yoki uzoq vaqt davomida yo'qolmasa, dermatologga murojaat qilish tavsiya etiladi.\n\nProfilaktika choralari sifatida gigiena qoidalariga rioya qilish, immunitetni mustahkamlash va HPV xavfini kamaytirish uchun emlash imkoniyatini ko'rib chiqish mumkin."
+}
 
             return Response({"diagnosis" : result}, status=200)
 
