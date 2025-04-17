@@ -7,7 +7,6 @@ import base64
 import openai
 
 
-openai.api_key = "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"
 
 
 
