@@ -5,13 +5,15 @@ from .serializers import ImageUploadSerializer
 import requests
 import base64
 import openai
+import os
+
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 
 
-
-
-class ImageUploadSerializer(APIView):
+class DiagnoseSkinAPIView(APIView):
     def post(self, request, *args, **kwargs):
         serializer = ImageUploadSerializer(data=request.data)
         if serializer.is_valid():
