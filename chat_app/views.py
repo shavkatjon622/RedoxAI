@@ -42,7 +42,7 @@ class DiagnoseSkinAPIView(APIView):
                                     "index": 0,
                                     "message": {
                                         "role": "assistant",
-                                        "content": "Hello! How can I assist you today?"
+                                        "content": "Test qilamiz nima bolyapti ekan?"
                                     },
                                     "finish_reason": "stop"
                                 }
